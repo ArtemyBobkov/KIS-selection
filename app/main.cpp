@@ -25,26 +25,3 @@ int main() {
     worker.Process();
     return 0;
 }
-
-/* int main() {
-    wchar_t inquiry = '\0';
-    std::wstring s, buffer;
-    SuffixAutomaton automaton(s);
-    while (std::wcin >> inquiry) {
-        std::wcin >> s;
-        for (auto sym: s) {
-            buffer += std::tolower(sym);
-        }
-        if (inquiry == '+') {
-            automaton.AddString(buffer);
-        }
-        if (inquiry == '?') {
-            for (auto item : automaton.FindAllOccurrences(buffer)) {
-                std::cout << item << ' ';
-            }
-            std::cout << std::endl;
-        }
-        buffer.clear();
-    }
-    return 0;
-} */
